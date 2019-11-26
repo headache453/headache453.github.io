@@ -4,7 +4,8 @@
 <title> Donne ici un titre à ta page html </title>
 <meta charset="UTF-8">
 <link rel=’stylesheet’ href=’style.css’/>
-  <script><?php
+  <script src="//api.dedipass.com/v1/pay.js"></script>
+  <?php
 $code = isset($_POST['code']) ? preg_replace('/[^a-zA-Z0-9]+/', '', $_POST['code']) : '';
 if( empty($code) ) {
   echo 'Vous devez saisir un code';
@@ -21,7 +22,7 @@ else {
     echo 'Le code '.$code.' est invalide';
   }
 }
-    ?></script>
+    ?>
 </head>
 
 <body>
@@ -34,7 +35,7 @@ else {
 <h6> Titre de niveau 6 </h6>
 <p> Chaque titre peut contenir du texte, comme ici </p> 
   <div data-dedipass="f93c0f1c64001e23a417b4cd03bdde8f" data-dedipass-custom=""></div>
-  <script src="//api.dedipass.com/v1/pay.js"></script>
+  
   
   lol
 </body> 
