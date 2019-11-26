@@ -7,8 +7,6 @@
 </head>
 
 <body>
-
-  <div data-dedipass="f93c0f1c64001e23a417b4cd03bdde8f" data-dedipass-custom=""></div>  
 <?php
 $code = isset($_POST['code']) ? preg_replace('/[^a-zA-Z0-9]+/', '', $_POST['code']) : '';
 if( empty($code) ) {
